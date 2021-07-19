@@ -196,8 +196,8 @@ int motor_halt(void) {
 
 int motor_setmode(enum Motor_mode mode) {
 	int err = 0;
-	err |= epos_Modes_of_Operation(MOTOR_EPOS_L_ID, mode);
-	err |= epos_Modes_of_Operation(MOTOR_EPOS_R_ID, mode);
+	err |= epos_Modes_of_Operation(MOTOR_EPOS_L_ID, (enum Epos_mode)mode);
+	err |= epos_Modes_of_Operation(MOTOR_EPOS_R_ID, (enum Epos_mode)mode);
 	return err;
 }
 

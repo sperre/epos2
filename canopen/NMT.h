@@ -12,7 +12,7 @@ enum NMT_transisions {
 	NMT_Reset_Node = 0x81,
 	NMT_Reset_Comunication = 0x82
 
-} NMT_transisions_t;
+};
 
 
 /**
